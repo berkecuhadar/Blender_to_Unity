@@ -1,46 +1,79 @@
-# Blender_to_Unity
- A Blender addon to easily export selected objects as FBX files with Unity-compatible settings. Features include baked transforms, correct axis orientation, and support for mesh and armature objects. Perfect for workflows involving Unity and tools like Mixamo. Compatible with Blender 4.0.0 and above. 🚀
+# Blender to Unity 6 – FBX Export Add-on
 
-## Features
-- Export selected objects as FBX.
-- Automatically applies transformations for Unity compatibility.
-- Supports mesh and armature objects.
-- Configurable export path via a file browser.
+A Blender add-on designed for clean and optimized FBX export workflows targeting **Unity 6**.  
+Includes one-click presets, correct axis orientation, baked transforms, deform-only rigs, and optional animation export.  
+Perfect for pipelines involving Unity, Mixamo, game-ready rigs, and character animation. 🚀
 
-## Installation
-1. Download the addon as a `.zip` file.
-2. Open Blender and navigate to `Edit > Preferences > Add-ons`.
-3. Click **Install...**, select the downloaded `.zip` file, and click **Install from Disk**.
-4. Enable the addon by checking the box next to `To Unity FBX`.
+---
 
-## Usage
-1. In the 3D View, select the objects you want to export.
-2. Open the sidebar (`N` key) and navigate to the **To Unity FBX** tab.
-3. Click the **To Unity FBX Export** button.
-4. Choose the export path using the file browser.
-5. Click **Export** to save the FBX file.
+## ✨ Features
+- ✔ One-click export presets:
+  - **Static Mesh** (no rig, no animation)
+  - **Rigged (No Animation)**
+  - **Rigged + Animations**
+- ✔ Custom export option with adjustable settings
+- ✔ Correct Unity-compatible orientation (**-Z Forward**, **Y Up**)  
+- ✔ Clean rigs (no leaf/end bones, deform-only)
+- ✔ Supports Mesh + Armature objects
+- ✔ Baked transforms and stable scale handling
+- ✔ Compatible with **Blender 4.0+**
 
-## Workflow Example
-1. A rigless mesh was exported to Unity using this addon and confirmed to be correctly imported.
-2. The exported mesh was uploaded to Mixamo, where animations were added.
-3. The animated mesh was imported back into Blender for further adjustments to the animation.
-4. The updated animation was exported again using this addon and imported into Unity, where it worked as expected.
+---
 
-## Settings
-The addon exports objects with the following settings:
-- **Scale**: 1.0
-- **Forward Axis**: `-Z`
-- **Up Axis**: `Y`
-- **Unit Scale Applied**
-- **Transforms Baked**
-- Supports **Mesh** and **Armature** objects.
+## 📥 Installation
+1. Download the add-on as a `.zip`.
+2. Open Blender → **Edit > Preferences > Add-ons**.
+3. Click **Install…**, select the `.zip`, and confirm.
+4. Enable the add-on: **To Unity FBX**.
 
-## Requirements
-- Blender 4.0.0 or higher.
+---
 
-## Author
-- **Name**: Berke Cuhadar
-- **Version**: 1.0
+## ▶ Usage
+1. Select the objects you want to export.
+2. Press **N** to open the sidebar → **To Unity FBX** tab.
+3. Choose a preset:
+   - Static Mesh  
+   - Rigged (No Anim)  
+   - Rigged + Animations  
+4. Or use **Custom Export** for manual configuration.
+5. Choose the export path.
+6. Export → Unity-ready FBX is generated.
 
-## License
-This addon is distributed under the [MIT License](https://opensource.org/licenses/MIT).
+---
+
+## 🛠 Example Workflow
+1. Export a mesh or rig from Blender using this add-on.  
+2. Import into Unity → confirm correct orientation & scale.  
+3. (Optional) Upload to Mixamo to add animations.  
+4. Download and re-import into Blender for fine-tuning.  
+5. Re-export using **Rigged + Animations** preset.  
+6. Import into Unity → animations work immediately.  
+
+---
+
+## ⚙ Default Export Settings
+- **Scale:** 1.0  
+- **Forward Axis:** `-Z`  
+- **Up Axis:** `Y`  
+- **Transform Baking:** Enabled  
+- **Unit Scale:** Applied  
+- **Leaf Bones:** Removed  
+- **Meshes + Armatures:** Supported  
+- **Animations:** Optional (based on preset)
+
+---
+
+## 📦 Requirements
+- Blender **4.0.0+**
+
+---
+
+## 👤 Author
+**Berke Cuhadar**  
+Version **1.1**
+
+---
+
+## 📄 License
+Distributed under the **MIT License**.  
+See: https://opensource.org/licenses/MIT
