@@ -21,7 +21,7 @@ Perfect for pipelines involving Unity, Mixamo, game-ready rigs, and character an
 ---
 
 ## 📥 Installation
-1. Download the add-on as a `.zip`.
+1. Zip the `to_unity_fbx` folder (the folder itself must be inside the `.zip`).
 2. Open Blender → **Edit > Preferences > Add-ons**.
 3. Click **Install…**, select the `.zip`, and confirm.
 4. Enable the add-on: **To Unity FBX**.
@@ -38,6 +38,8 @@ Perfect for pipelines involving Unity, Mixamo, game-ready rigs, and character an
 4. Or use **Custom Export** for manual configuration.
 5. Choose the export path.
 6. Export → Unity-ready FBX is generated.
+7. Later edits: select the objects and press **Update Last Export**. It overwrites the same file with the same settings, so Unity keeps the same GUID and nothing breaks.
+   (Export the first time directly into your Unity project's `Assets` folder.)
 
 ---
 
@@ -58,7 +60,8 @@ Perfect for pipelines involving Unity, Mixamo, game-ready rigs, and character an
 - **Transform Baking:** Enabled  
 - **Unit Scale:** Applied  
 - **Leaf Bones:** Removed  
-- **Meshes + Armatures:** Supported  
+- **Object types:** Meshes + Armatures only (empties, curves, etc. are not exported)  
+- **Smoothing:** Face  
 - **Animations:** Optional (based on preset)
 
 ---
@@ -70,7 +73,7 @@ Perfect for pipelines involving Unity, Mixamo, game-ready rigs, and character an
 
 ## 👤 Author
 **Berke Cuhadar**  
-Version **1.1**
+Version **1.2**
 
 ---
 
